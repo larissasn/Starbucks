@@ -6,7 +6,7 @@
 }
 
 body {
-    padding-top: 20px;
+    padding-top: 18px;
     padding-right: 100px;
     padding-left: 100px;
 }
@@ -92,7 +92,20 @@ button {
     z-index: -1;
 }
 
+@media (max-width: 900px) {
+    body {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
 @media (max-width:734px) {
+
+    body {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
     span {
         color: rgb(108, 248, 115);
     }
@@ -102,58 +115,108 @@ button {
         color: black;
     }
 
+    .menu {
+
+        transform: translateY(10px);
+    }
+
 }
 
 @media (max-width:694px) {
+    body {
+        padding: 5px 20px;
+
+    }
+
+    .conteudo {
+        transform: translateY(50px);
+    }
+
+    .menu {
+
+        transform: translateY(20px);
+    }
+
     .caixa-texto {
         width: 500px;
+        padding-left: 10px;
     }
+
     h2 {
         font-size: 40px;
     }
-    
+
     span {
         color: rgb(108, 248, 115);
         font-size: 50px;
     }
-    
+
     p {
         font-size: 18px;
     }
-    
+
     .circulo {
-        clip-path: circle(400px at right 600px); 
+        clip-path: circle(400px at right 600px);
     }
 }
 
 @media (max-width:550px) {
-    body{
-        padding: 10px 20px;
+    body {
+        padding: 0px 15px;
 
     }
+
+    .conteudo {
+        transform: translateY(80px);
+    }
+
+    .menu {
+
+        transform: translateY(100px);
+    }
+
     .starbucks {
         width: 250px;
     }
+
     .circulo {
-        clip-path: circle(300px at right 500px); 
+        clip-path: circle(400px at right 600px);
     }
 }
+
 @media (max-width:400px) {
-    body{
-        padding: 10px 20px;
+    body {
+        padding: 5px 5px;
 
     }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    span {
+        font-size: 40px;
+    }
+
     p {
+        font-size: 13px;
         background-color: white;
         border-radius: 40px;
         opacity: 0.7;
     }
+
+    .menu {
+
+        transform: translateY(120px);
+    }
+
     .starbucks {
         width: 200px;
+        transform: translateX(10px);
     }
+
     .circulo {
-        clip-path: circle(200px at right 400px); 
+        clip-path: circle(200px at right 400px);
+        transform: translateX(10px);
     }
 }
-
-

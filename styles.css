@@ -68,8 +68,11 @@ button {
 
 .starbucks {
     width: 300px;
+    transition: 1s;
 }
-
+.starbucks:hover {
+    transform: translateX(-25px);
+}
 .botao-menu {
     width: 60px;
     transition: 1s;
